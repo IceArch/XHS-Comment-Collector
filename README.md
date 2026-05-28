@@ -21,9 +21,37 @@
 ### 2. 安装脚本
 **一键安装**（点击即可触发 Tampermonkey 安装提示）：
 
-👉 **[点击安装脚本](https://github.com/你的用户名/xhs-comment-collector/raw/main/xhs-comment-collector.user.js)**
+👉 **[点击安装脚本](https://github.com/Eyjafjalla/xhs-comment-collector/raw/main/xhs-comment-collector.user.js)**
 
 &gt; 如果点击没有反应，复制下面的 Raw 链接，在 Tampermonkey 面板 → 实用工具 → 从 URL 安装，粘贴链接即可。
 
 ### 3. 手动安装
-1. 复制脚本 Raw 链接：
+1. 复制脚本 Raw 链接：https://github.com/Eyjafjalla/xhs-comment-collector/raw/main/xhs-comment-collector.user.js
+2. 打开 Tampermonkey 面板 → 点击 **"从 URL 安装"** → 粘贴链接 → 点击 **安装**
+
+## 使用步骤
+
+1. 打开任意小红书笔记页面（URL 包含 `/explore/` 或 `/discovery/item/`）
+2. 等待 2 秒，右下角出现悬浮面板
+3. 点击 **"自动展开全部评论"** 加载所有评论（含楼中楼）
+4. 点击 **"导出 CSV"** 下载数据
+
+## 导出字段说明
+
+| 字段 | 说明 |
+|------|------|
+| 用户ID | 评论者的小红书 user_id |
+| 用户主页 | 可直接点击访问的主页链接（含 xsec_token）|
+| 评论内容 | 纯文本评论 |
+| 点赞数 | 该评论获得的点赞 |
+| 是否二级评论 | 一级/楼中楼标识 |
+
+## 更新日志
+
+### v1.3 (2026-05-28)
+- 支持 SPA 路由监听，首页点进笔记自动触发
+- 增加请求劫持，实时采集 API 数据
+- 支持二级评论递归采集
+
+## License
+[MIT](LICENSE)
