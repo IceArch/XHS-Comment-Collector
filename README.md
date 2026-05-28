@@ -21,12 +21,12 @@
 ### 2. 安装脚本
 **一键安装**（点击即可触发 Tampermonkey 安装提示）：
 
-👉 **[点击安装脚本](https://github.com/Eyjafjalla/xhs-comment-collector/raw/main/xhs-comment-collector.user.js)**
+👉 **[点击安装脚本](https://github.com/IceArch/xhs-comment-collector/raw/main/xhs-comment-collector.user.js)**
 
 &gt; 如果点击没有反应，复制下面的 Raw 链接，在 Tampermonkey 面板 → 实用工具 → 从 URL 安装，粘贴链接即可。
 
 ### 3. 手动安装
-1. 复制脚本 Raw 链接：https://github.com/Eyjafjalla/xhs-comment-collector/raw/main/xhs-comment-collector.user.js
+1. 复制脚本 Raw 链接：https://github.com/IceArch/xhs-comment-collector/raw/main/xhs-comment-collector.user.js
 2. 打开 Tampermonkey 面板 → 点击 **"从 URL 安装"** → 粘贴链接 → 点击 **安装**
 
 ## 使用步骤
